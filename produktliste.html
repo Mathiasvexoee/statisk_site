@@ -8,41 +8,57 @@
   </head>
   <body>
     <header>
-      <h1>Produkter</h1>
+      <h1 class="logo"><a href="index.html">Fashion<span>R</span>Us</a></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="produktliste.html">Produkter</a></li>
+          <li><a href="#">Om os</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <main>
-      <div class="product_list_container">
-        <!-- Normal produkt -->
+    <main class="productlist">
+      <h2>Produkter</h2>
+      <!-- Normal produkt -->
+      <article>
         <a href="produkt.html" class="product_card">
           <img src="https://kea-alt-del.dk/t7/images/webp/640/1570.webp" alt="" />
-          <h3>Sort T-shirt</h3>
+          <h3>Sort top</h3>
           <p class="price">399 kr</p>
         </a>
+      </article>
 
-        <!-- Udsolgt -->
+      <!-- Udsolgt -->
+      <article>
         <a href="produkt.html" class="product_card udsolgt">
           <img src="https://kea-alt-del.dk/t7/images/webp/640/1573.webp" alt="" />
-          <h3>Hættetrøje</h3>
+          <h3>Tights</h3>
           <p class="price">599 kr</p>
           <p class="sold_out_label">Udsolgt</p>
         </a>
+      </article>
 
-        <!-- Nedsat -->
+      <!-- Nedsat -->
+      <article>
         <a href="produkt.html" class="product_card nedsat">
           <img src="https://kea-alt-del.dk/t7/images/webp/640/1571.webp" alt="" />
-          <h3>Jeans</h3>
+          <h3>Sneakers</h3>
           <p class="old_price">799 kr</p>
           <p class="sale_price">499 kr</p>
         </a>
+      </article>
 
-        <!-- Flere kopier -->
-        <a href="produkt.html" class="product_card">
+      <!-- Nedsat og udsolgt -->
+      <article>
+        <a href="produkt.html" class="product_card nedsat udsolgt">
           <img src="https://kea-alt-del.dk/t7/images/webp/640/1572.webp" alt="" />
-          <h3>Jakke</h3>
-          <p class="price">999 kr</p>
+          <h3>Sweatpants</h3>
+          <p class="old_price">999 kr</p>
+          <p class="sale_price">599 kr</p>
+          <p class="sold_out_label">Udsolgt</p>
         </a>
-      </div>
+      </article>
     </main>
   </body>
 </html>
