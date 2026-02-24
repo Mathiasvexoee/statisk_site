@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produktliste</title>
+    <link rel="stylesheet" href="style/general.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Produkter</h1>
+    </header>
+
+    <main>
+      <div class="product_list_container">
+        <!-- Normal produkt -->
+        <a href="produkt.html" class="product_card">
+          <img src="https://kea-alt-del.dk/t7/images/webp/640/1570.webp" alt="" />
+          <h3>Sort T-shirt</h3>
+          <p class="price">399 kr</p>
+        </a>
+
+        <!-- Udsolgt -->
+        <a href="produkt.html" class="product_card udsolgt">
+          <img src="https://kea-alt-del.dk/t7/images/webp/640/1573.webp" alt="" />
+          <h3>Hættetrøje</h3>
+          <p class="price">599 kr</p>
+          <p class="sold_out_label">Udsolgt</p>
+        </a>
+
+        <!-- Nedsat -->
+        <a href="produkt.html" class="product_card nedsat">
+          <img src="https://kea-alt-del.dk/t7/images/webp/640/1571.webp" alt="" />
+          <h3>Jeans</h3>
+          <p class="old_price">799 kr</p>
+          <p class="sale_price">499 kr</p>
+        </a>
+
+        <!-- Flere kopier -->
+        <a href="produkt.html" class="product_card">
+          <img src="https://kea-alt-del.dk/t7/images/webp/640/1572.webp" alt="" />
+          <h3>Jakke</h3>
+          <p class="price">999 kr</p>
+        </a>
+      </div>
+    </main>
+  </body>
+</html>
