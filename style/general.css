@@ -30,6 +30,10 @@ header {
   color: red;
 }
 
+.logo a:hover {
+  color: #eee;
+}
+
 header nav ul {
   list-style: none;
   display: flex;
@@ -81,6 +85,7 @@ header nav ul li a:hover {
   text-decoration: none;
   color: black;
   font-weight: bold;
+  border-radius: 25px;
 }
 
 /* PRODUKTLISTE */
