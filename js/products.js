@@ -1,0 +1,1 @@
+const productContainer = document.querySelector(".");
