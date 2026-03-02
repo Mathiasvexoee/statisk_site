@@ -104,12 +104,6 @@ header nav ul li a:hover {
   grid-template-columns: subgrid;
 }
 
-/* .product_list_container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-} */
-
 .product_card {
   border: 1px solid #ddd;
   padding: 1rem;
