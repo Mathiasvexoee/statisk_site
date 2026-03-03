@@ -142,10 +142,33 @@ header nav ul li a:hover {
 
 /* Single product */
 
+/* Single product */
+
 .product_page {
+  display: block; /* vigtigt */
+}
+
+.product_page h2 {
+  margin-bottom: 2rem;
+}
+
+.product_content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 3rem;
+  align-items: start;
+}
+
+.product_image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product_info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .product_info button {
@@ -160,4 +183,10 @@ header nav ul li a:hover {
 /* Udsolgt styling */
 .udsolgt {
   opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .product_content {
+    grid-template-columns: 1fr;
+  }
 }
