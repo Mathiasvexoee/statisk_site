@@ -13,7 +13,7 @@ if (selectedCategory) {
 }
 
 // BYG URL (med eller uden kategori)
-const url = selectedCategory ? `https://kea-alt-del.dk/t7/api/products?category=${selectedCategory}` : "https://kea-alt-del.dk/t7/api/products";
+const url = selectedCategory ? `https://kea-alt-del.dk/t7/api/products?category=${selectedCategory}&limit=25` : "https://kea-alt-del.dk/t7/api/products";
 
 fetch(url)
   .then((response) => response.json())
