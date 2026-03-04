@@ -1,9 +1,24 @@
-const productContainer = document.querySelector(".productlist");
+const productContainer = document.querySelector(".productlist_index");
 const heading = document.querySelector("main h2");
 
 // HENT KATEGORI FRA URL
 const params = new URLSearchParams(window.location.search);
 const selectedCategory = params.get("category");
+
+// KARRUSEL PILE
+const carousel = document.querySelector(".productlist_index");
+const nextBtn = document.querySelector(".next");
+const prevBtn = document.querySelector(".prev");
+
+const scrollAmount = 300;
+
+nextBtn.addEventListener("click", () => {
+  carousel.scrollLeft += scrollAmount;
+});
+
+prevBtn.addEventListener("click", () => {
+  carousel.scrollLeft -= scrollAmount;
+});
 
 // ÆNDR H2 HVIS DER ER VALGT KATEGORI
 if (selectedCategory) {
