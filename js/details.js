@@ -1,6 +1,5 @@
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
-
 const productContainer = document.querySelector(".product_page");
 
 fetch(`https://kea-alt-del.dk/t7/api/products/${id}`)
@@ -13,7 +12,7 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${id}`)
     let discountHTML = "";
 
     if (product.discount) {
-      const newPrice = Math.round(product.price - (product.price * product.discount) / 100);
+      const newPrice = Math.ceil(product.price - (product.price * product.discount) / 100);
 
       discountHTML = `
         <p class="old_price">${product.price} kr</p>
@@ -37,7 +36,6 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${id}`)
         <p><strong>Type:</strong> ${product.subcategory}</p>
           <p><strong>Brand:</strong> ${product.brandname}</p>
           <p><strong>Kategori:</strong> ${product.articletype}</p>
-          <p>${product.description}</p>
 
           ${discountHTML}
           ${soldOutLabel}
