@@ -12,6 +12,11 @@ const prevBtn = document.querySelector(".prev");
 
 const scrollAmount = 300;
 
+document.querySelector(".back_btn").addEventListener("click", goBack);
+function goBack() {
+  history.back();
+}
+
 nextBtn.addEventListener("click", () => {
   carousel.scrollLeft += scrollAmount;
 });

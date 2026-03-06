@@ -5,6 +5,11 @@ const heading = document.querySelector("main h2");
 const params = new URLSearchParams(window.location.search);
 const selectedCategory = params.get("category");
 
+document.querySelector(".back_btn").addEventListener("click", goBack);
+function goBack() {
+  history.back();
+}
+
 // ÆNDR H2 HVIS DER ER VALGT KATEGORI
 if (selectedCategory) {
   heading.textContent = selectedCategory;
