@@ -4,6 +4,11 @@ const categoryContainer = document.querySelector(".category_list_container");
 
 // console.log("category:", categories[0]);
 
+document.querySelector(".back_btn").addEventListener("click", goBack);
+function goBack() {
+  history.back();
+}
+
 fetch("https://kea-alt-del.dk/t7/api/categories")
   .then((response) => response.json())
   .then((data) => {
